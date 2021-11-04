@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 .container{
     background: url(../img/jumbo.png);
     background-size: cover;
@@ -12,12 +15,52 @@
 header{
     width: 1200px;
     margin:auto;
-    border:1px solid black;
+    
     height: 100px;  
+    position:relative;
 }
 .box{
     width: 800px;
     border:1px solid black;
     height: 480px;
     margin: auto;
+}
+.logo{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+/* ----------------NAVBAR---------- */
+.menu{
+    text-align: center;
+}
+nav{
+    list-style: none;
+}
+nav ul li{
+    margin-right: 10px;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color:white;
+    padding:6px;
+    font-size: 18px;
+}
+/* ---------------BUTTON ACCEDI----------- */
+.btn{
+    padding:6px 10px;
+
+    border-radius: 15px;
+    border-color: white;
+    color:black;
+    background-color: white;
+
+    
+     position:absolute;
+     top:50%;
+     right: 0;
+     transform: translate(-0%,-50%);
+
 }
